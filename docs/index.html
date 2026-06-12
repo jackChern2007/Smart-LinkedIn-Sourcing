@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meeting Notes Summarizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Meeting Notes Summarizer</h1>
+    <p class="subtitle">
+      Paste your raw meeting notes or transcript below, or upload a .txt file,
+      then click Summarize.
+    </p>
+
+    <label for="file-input" class="file-label">Upload a .txt file (optional)</label>
+    <input type="file" id="file-input" accept=".txt" />
+
+    <textarea
+      id="notes-input"
+      placeholder="Paste your meeting notes or transcript here..."
+      rows="12"
+    ></textarea>
+
+    <button id="summarize-btn">Summarize</button>
+    <p id="status" class="status"></p>
+
+    <section id="results" class="results hidden">
+      <div class="result-block">
+        <h2>Summary of Key Decisions</h2>
+        <div id="summary-output" class="output"></div>
+      </div>
+
+      <div class="result-block">
+        <h2>Action Items</h2>
+        <div id="actions-output" class="output"></div>
+      </div>
+
+      <div class="result-block">
+        <h2>Draft Follow-Up Email</h2>
+        <div id="email-output" class="output"></div>
+      </div>
+
+      <button id="download-btn">Download as Markdown</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
