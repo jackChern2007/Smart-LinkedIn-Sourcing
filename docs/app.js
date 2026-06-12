@@ -4,7 +4,7 @@ const BACKEND_URL = "https://YOUR-VERCEL-PROJECT.vercel.app/api/summarize";
 
 // Update this to the OAuth Client ID from your Google Cloud project
 // (APIs & Services > Credentials > OAuth 2.0 Client IDs > Web application).
-const GOOGLE_CLIENT_ID = "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID = "45989514160-9crgvbir5gemp1ck9jisl0pf5fb7bh31.apps.googleusercontent.com";
 const GOOGLE_SCOPES = "https://www.googleapis.com/auth/meetings.space.readonly";
 
 const fileInput = document.getElementById("file-input");
