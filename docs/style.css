@@ -111,3 +111,63 @@ button:disabled {
 #download-btn:hover {
   background: #15803d;
 }
+
+.meet-connect {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  background: #fafafa;
+}
+
+.meet-connect h2 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.meet-connect .hint {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0;
+}
+
+#google-signin-btn {
+  background: #ea4335;
+  margin-top: 0;
+}
+
+#google-signin-btn:hover {
+  background: #c5221f;
+}
+
+#meet-list-container {
+  margin-top: 0.75rem;
+}
+
+#meet-list-container.hidden {
+  display: none;
+}
+
+#meet-select {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.email-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.email-actions button {
+  margin-top: 0;
+  background: #6b7280;
+}
+
+.email-actions button:hover {
+  background: #4b5563;
+}

@@ -14,7 +14,22 @@
       then click Summarize.
     </p>
 
-    <label for="file-input" class="file-label">Upload a .txt file (optional)</label>
+    <section class="meet-connect">
+      <h2>Import from Google Meet</h2>
+      <p class="hint">
+        Requires a Google Workspace account (Business Standard or higher) with
+        meeting transcripts enabled.
+      </p>
+      <button id="google-signin-btn">Sign in with Google</button>
+      <div id="meet-list-container" class="hidden">
+        <label for="meet-select">Recent meetings with transcripts</label>
+        <select id="meet-select"></select>
+        <button id="load-transcript-btn">Load Transcript</button>
+      </div>
+      <p id="meet-status" class="status"></p>
+    </section>
+
+    <label for="file-input" class="file-label">Or upload a .txt file</label>
     <input type="file" id="file-input" accept=".txt" />
 
     <textarea
@@ -40,12 +55,17 @@
       <div class="result-block">
         <h2>Draft Follow-Up Email</h2>
         <div id="email-output" class="output"></div>
+        <div class="email-actions">
+          <button id="copy-email-btn">Copy Email</button>
+          <button id="mailto-btn">Open in Email App</button>
+        </div>
       </div>
 
       <button id="download-btn">Download as Markdown</button>
     </section>
   </main>
 
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <script src="app.js"></script>
 </body>
 </html>
