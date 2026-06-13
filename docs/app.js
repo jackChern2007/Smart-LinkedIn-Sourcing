@@ -1,6 +1,6 @@
 // Update this to the URL of your deployed Vercel function, e.g.
 // "https://your-project.vercel.app/api/summarize"
-const BACKEND_URL = "https://YOUR-VERCEL-PROJECT.vercel.app/api/summarize";
+const BACKEND_URL = "https://smart-linked-in-sourcing.vercel.app/api/summarize";
 
 // Update this to the OAuth Client ID from your Google Cloud project
 // (APIs & Services > Credentials > OAuth 2.0 Client IDs > Web application).
